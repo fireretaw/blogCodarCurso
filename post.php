@@ -10,7 +10,7 @@
                 
                 if($post['id'] == $postId){
                     $currentPost = $post;
-                    
+
                 }
             }
 
