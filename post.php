@@ -28,12 +28,11 @@
         </div>
         <p class="posts-content"><?php echo $currentPost['conteudo'] ?></p>
     </div>
-</main>
-<aside class="nav-container">
-    <h3 class="tags-title">Tags</h3>
+    <aside class="nav-container">
+        <h3 class="tags-title">Tags</h3>
         <ul class="tags-list">
             <?php foreach($currentPost['tags'] as $tag): ?>
-                <li><a href="#"><?= $tag ?></a></li>
+                <li><a href="#"><?php echo $tag ?></a></li>
             <?php endforeach; ?>
         </ul>
         <h3 class="categories-title">Categorias</h3>
@@ -42,15 +41,9 @@
                 <li><a href="#"><?= $category ?></a></li>
             <?php endforeach; ?>
         </ul>
-</aside>    
-        
-       
-
-        
-        
-   
+    </aside>  
+</main>  
 
 <?php
     include_once("templates/footer.php");
-
-?>
+?>  
